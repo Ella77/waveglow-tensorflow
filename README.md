@@ -18,7 +18,7 @@ However, I build the tensorflow r1.12 from source to specify the cuda version to
 For getting the dataset prepared, first **adjust the Input Path section of src/hparams.py** to our dataset path, then run:
 ```
 cd src
-python3 dataset/procaudio.py
+python3 datasets/procaudio.py
 ```
 The *metadata.csv* described in *src/hparams.py* is as the following format:
 ```
