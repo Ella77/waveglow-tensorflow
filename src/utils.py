@@ -65,7 +65,7 @@ class multiproc_reader():
                 cmetadata = self.metadata[c]
                 name, _, text = cmetadata
                 melname = os.path.join(args.mel_dir, name) + '.npy'
-                wavname = os.path.join(args.wav_dir, name) + '.npy'
+                wavname = os.path.join(args.wav_dir, name) + '.wav'
                 mel, audio = padtomaxlen(np.load(melname), np.load(wavname))
                 mels.append(mel)
                 wavs.append(audio)
